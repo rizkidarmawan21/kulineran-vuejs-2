@@ -1,0 +1,15 @@
+#app {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.router-link-exact-active {
+    font-weight: bold;
+}
+
+.card-product {
+    border-radius: 15px;
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+}
