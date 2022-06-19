@@ -9,9 +9,9 @@
                         <div class="justify-content-center align-self-center">
                             <h2><strong>Delicius Food Menu,</strong> <br> In Your Gadged</h2>
                             <p>Let's Choose and Order Your Foods Favorite</p>
-                            <button class="btn btn-success">
+                            <router-link to="/foods" class="btn btn-success">
                                 <b-icon-arrow-right /> Order Now
-                            </button>
+                            </router-link>
                         </div>
                     </div>
                 </div>
