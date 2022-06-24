@@ -68,7 +68,7 @@ export default {
         pemesanan() {
             if(this.pesan.jumlah_pemesanan ){
                 this.pesan.product = this.product
-                axios.post(API+"/keranjangs", this.pesan)
+                axios.post(API+'/keranjangs', this.pesan)
                 .then(() => {
                     this.$router.push({path: "/keranjang"})
                     this.$toast.success('Sukses masuk kerajang.', {
