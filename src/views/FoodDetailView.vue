@@ -48,6 +48,7 @@
 <script>
 import Navbar from '@/components/NavbarComponent.vue'
 import axios from 'axios'
+import { API } from '@/router/api'
 
 export default {
     name: 'FoodDetailView',
@@ -67,7 +68,7 @@ export default {
         pemesanan() {
             if(this.pesan.jumlah_pemesanan ){
                 this.pesan.product = this.product
-                axios.post("http://localhost:3000/keranjangs", this.pesan)
+                axios.post(API+"/keranjangs", this.pesan)
                 .then(() => {
                     this.$router.push({path: "/keranjang"})
                     this.$toast.success('Sukses masuk kerajang.', {
@@ -97,7 +98,7 @@ export default {
     },
     mounted() {
         axios
-            .get('http://localhost:3000/products/' + this.$route.params.id)
+            .get(API+'/products/' + this.$route.params.id)
             .then((response) =>
                 // handle success
                 this.setProduct(response.data)

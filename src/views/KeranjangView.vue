@@ -82,6 +82,8 @@
 <script>
 import Navbar from '@/components/NavbarComponent.vue'
 import axios from 'axios'
+import {API} from '@/router/api.js'
+
 export default {
     name: 'KeranjangView',
     components: {
@@ -103,10 +105,10 @@ export default {
 
 
                 axios
-                    .delete('http://localhost:3000/keranjangs/' + id)
+                    .delete(API+'/keranjangs/' + id)
                     .then(() =>
                         axios
-                            .get('http://localhost:3000/keranjangs')
+                            .get(API+'/keranjangs')
                             .then((response) =>
                                 // handle success
                                 this.setKeranjang(response.data)

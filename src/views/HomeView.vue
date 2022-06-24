@@ -27,6 +27,7 @@
 import Navbar from '@/components/NavbarComponent.vue'
 import Hero from '@/components/HeroComponent.vue'
 import Card from '@/components/CardComponent.vue'
+import {API} from '@/router/api.js'
 import axios from 'axios'
 
 export default {
@@ -48,7 +49,7 @@ export default {
   },
   mounted(){
     axios
-      .get('http://localhost:3000/best-products')
+      .get(API+'/best-products')
       .then((response) =>
         // handle success
         this.setProduct(response.data)

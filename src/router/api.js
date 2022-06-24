@@ -1,0 +1,1 @@
+export const API = "https://my-json-server.typicode.com/rizkidarmawan21/kulineran-BE"
