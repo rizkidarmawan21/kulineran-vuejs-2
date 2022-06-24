@@ -4,6 +4,10 @@
 ```
 json-serve --watch db.json
 ```
+or use
+```
+https://my-json-server.typicode.com/rizkidarmawan21/kulineran-BE
+```
 
 ## Project setup
 ```
